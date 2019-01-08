@@ -5,3 +5,4 @@ test
 .eslintrc.json
 jsconfig.json
 package-lock.json
+vsc-extension-quickstart.md
