@@ -1,31 +1,37 @@
-# the-dawn README
+# crystal UI README
 
-This is the README for your extension "the-dawn". After writing up a brief description, we recommend including the following sections.
+The extension 'crystal UI' adds a background pic for your vscode.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. press `ctrl+shift+p` , use the command `open crystal UI`
+2. restart your vscode
+3. change your theme to `'crystal UI'`
 
-For example if there is an image subfolder under your extension project workspace:
+Then,your vscode will look like this:
 
-\!\[feature X\]\(images/feature-x.png\)
+![feature1](https://z131.xyz/img/feature1.jpg)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![feature2](https://z131.xyz/img/feature2.jpg)
 
-## Requirements
+It's beautiful,isn't it?  
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+This ext works by changing vscode's css file(to add a background,and it causes a alarm——just ignore it,I promise that this ext is harmless) and use a independent theme,which adds a opacity to your UI to show the background.
+
+So if you want to turn it off,just choose another theme——this saves you from the trouble to reload vscode.**But remember to use the command `close crystal UI` to turn it off when you want to uninstall this ext!!**
+
+## By the way
+
+The little cat in my editor is not included in this ext,you can search the ext `'background'` to add a background to your editor.If you want the source picture of this cat,you can download the app `'JIKE'`.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `crystalUI.opacity`: the opacity of ui in crystal mode,including the titlebar,the sidebar and the activitybar.
+* `crystalUI.listsOpacity`: the opacity of lists in crystal mode.
+* `crystalUI.backpicPath`: the **absolute** path of the background picture,default if set to *null*.
+* `crystalUI.foreground`: if true,the background will float above the whole window. It may looks cool,but it make you hard to recognize the words in the editor. So I strongly recommand you set it to false.
 
 ## Known Issues
 
@@ -33,33 +39,6 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

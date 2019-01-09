@@ -36,25 +36,48 @@
 			"title": "Plugin crystalUI configuration",
 			"type": "object",
 			"properties": {
-				"crystalUI.foreground": {
-					"type":"boolean",
+				"crystalUI.window.foreground": {
+					"type": "boolean",
 					"default": false,
 					"description": "Whether the picture is put above your editor and terminal.If true,the configuration \"listsOpacity\" won't work"
 				},
-				"crystalUI.backpicPath": {
+				"crystalUI.window.backpicPath": {
 					"type": "string",
 					"default": null,
-					"description": "Absolute path of the background,default if set to null."
+					"description": "Absolute path of the window's background,default if set to null."
 				},
-				"crystalUI.opacity": {
+				"crystalUI.window.opacity": {
 					"type": "number",
 					"default": 0.7,
 					"description": "The opacity of vscode's window in crystal mode.Need a value between 0 and 1."
 				},
-				"crystalUI.listsOpacity": {
+				"crystalUI.window.listsOpacity": {
 					"type": "number",
 					"default": 0.3,
 					"description": "The opacity of lists' background when mouseon or mousefocus.Need a value between 0 and 1."
+				},
+				"crystalUI.editor.backpic": {
+					"type": "array",
+					"default": [],
+					"description": "Absolute path of the editor's background,default if set to '',no back pic if set to null.(Max length is 3)"
+				},
+				"crystalUI.editor.bkgrdOpacity": {
+					"type": "array",
+					"default": [
+						0.5,
+						0.5,
+						0.5
+					],
+					"description": "The opacity of editor's background.Need values between 0 and 1.(Max length is 3)"
+				},
+				"crystalUI.editor.bkgrdPosition": {
+					"type": "array",
+					"default": [
+						"right bottom",
+						"right bottom",
+						"right bottom"
+					],
+					"description": "The position of editor's background,the same format as 'background-position' in css.(Max length is 3)"
 				}
 			}
 		}
