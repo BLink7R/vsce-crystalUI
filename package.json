@@ -37,12 +37,17 @@
 			"title": "Plugin crystalUI configuration",
 			"type": "object",
 			"properties": {
+				"crystalUI.useDarkTheme": {
+					"type": "boolean",
+					"default": true,
+					"description": "True - using a dark theme;False - using a light theme"
+				},
 				"crystalUI.window.foreground": {
 					"type": "boolean",
 					"default": false,
 					"description": "Whether the picture is put above your editor and terminal.If true,the configuration \"listsOpacity\" won't work"
 				},
-				"crystalUI.window.backpicPath": {
+				"crystalUI.window.backpic": {
 					"type": "string",
 					"default": null,
 					"description": "Absolute path of the window's background,default if set to null."
