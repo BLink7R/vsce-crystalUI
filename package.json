@@ -19,11 +19,11 @@
 		"commands": [
 			{
 				"command": "extension.openCrystalUI",
-				"title": "Open crystal UI(the dawn)"
+				"title": "Open crystal UI"
 			},
 			{
 				"command": "extension.clsCrystalUI",
-				"title": "Close crystal UI(the dawn)"
+				"title": "Close crystal UI"
 			}
 		],
 		"themes": [
