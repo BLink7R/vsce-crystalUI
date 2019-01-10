@@ -2,7 +2,8 @@
 	"name": "crystalui",
 	"displayName": "crystal UI",
 	"description": "To make your vscode more attractive",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	"publisher": "halflife1600yrs",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -18,11 +19,11 @@
 		"commands": [
 			{
 				"command": "extension.openCrystalUI",
-				"title": "Open crystal UI(the dawn)"
+				"title": "Open crystal UI"
 			},
 			{
 				"command": "extension.clsCrystalUI",
-				"title": "Close crystal UI(the dawn)"
+				"title": "Close crystal UI"
 			}
 		],
 		"themes": [
@@ -36,12 +37,17 @@
 			"title": "Plugin crystalUI configuration",
 			"type": "object",
 			"properties": {
+				"crystalUI.useDarkTheme": {
+					"type": "boolean",
+					"default": true,
+					"description": "True - using a dark theme;False - using a light theme"
+				},
 				"crystalUI.window.foreground": {
 					"type": "boolean",
 					"default": false,
 					"description": "Whether the picture is put above your editor and terminal.If true,the configuration \"listsOpacity\" won't work"
 				},
-				"crystalUI.window.backpicPath": {
+				"crystalUI.window.backpic": {
 					"type": "string",
 					"default": null,
 					"description": "Absolute path of the window's background,default if set to null."
@@ -92,5 +98,10 @@
 		"eslint": "^4.11.0",
 		"@types/node": "^8.10.25",
 		"@types/mocha": "^2.2.42"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/halflife1600yrs/vsce-crystalUI"
+	},
+	"homepage": "https://github.com/halflife1600yrs/vsce-crystalUI"
 }

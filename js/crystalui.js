@@ -5,7 +5,7 @@ const config = exports.config = vscode.workspace.getConfiguration('crystalUI');
 
 function load(extpath) {
     const picpath = extpath + '\\img';
-    const jsonpath = extpath + '\\json\\crystal-out.json';
+    const jsonpath = extpath + '\\json';
     addCSS(picpath);
     if (!config.get('window.foreground')) addJSON(jsonpath);
 }
@@ -56,7 +56,7 @@ function addCSS(picpath) {
             if (isNone(winpic) || winpic == '') winpic = picpath + '/backpic.jpg';
             if (config.get('window.foreground'))
                 cssaim += "body {\n"
-                    + "\topacity:"+ config.get('window.opacity') + "!important;\n"
+                    + "\topacity:" + config.get('window.opacity') + "!important;\n"
                     + "\tbackground-image: url('" + winpic + "')!important;\n"
                     + "\tbackground-size: cover!important;\n"
                     + "}\n";
@@ -118,7 +118,7 @@ function addJSON(jsonpath) {
         // this 2 settings should be set to invisible
     ];
     const solid = ["terminal.background",];
-    fs.readFile(jsonpath, function (err, date) {
+    fs.readFile(jsonpath + '\\themes' + (config.get('useDarkTheme') ? '\\dark.json' : '\\light.json'), function (err, date) {
         if (err) {
             vscode.window.showErrorMessage('Can\'t find the theme file');
         } else {
@@ -127,8 +127,9 @@ function addJSON(jsonpath) {
             addOpacity(themeconf, lists, (Math.ceil(config.get('window.listsOpacity') * 255)).toString(16));
             addOpacity(themeconf, invis, '00');
             addOpacity(themeconf, solid, '');
+            console.log(JSON.stringify(themeconf, null, 4));
             //the terminal background can't have a opacity because there is a black block under it
-            fs.writeFile(jsonpath, JSON.stringify(themeconf, null, 4), function (err) {
+            fs.writeFile(jsonpath + '\\crystal-out.json', JSON.stringify(themeconf, null, 4), function (err) {
                 if (err) {
                     vscode.window.showErrorMessage('Can\'t write the theme file');
                 }
