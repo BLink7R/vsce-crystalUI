@@ -74,7 +74,7 @@ function addCSS(picpath) {
                     picarry.bkgrdOpacity[i] = 0;
                 if (isNone(picarry.bkgrdPosition[i]) || picarry.bkgrdPosition[i] == '')
                     picarry.bkgrdPosition[i] = "right bottom";
-                cssaim += "[id=\"workbench.parts.editor\"] .split-view-view:nth-child(" + i + 1 + ") .editor-container .overflow-guard>.monaco-scrollable-element::before {\n"
+                cssaim += "[id=\"workbench.parts.editor\"] .split-view-view:nth-child(" + (i + 1) + ") .editor-container .overflow-guard>.monaco-scrollable-element::before {\n"
                     + "\tbackground-image: url('" + picarry.backpic[i] + "');\n"
                     + "\tcontent:'';\n"
                     + "\tposition:absolute;\n"
