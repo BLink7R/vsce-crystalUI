@@ -61,7 +61,7 @@ function addCSS(picpath) {
                     + "\tbackground-size: cover!important;\n"
                     + "}\n";
             else
-                cssaim += "[id=\"workbench.main.container\"] {\n"
+                cssaim += ".monaco-workbench {\n"
                     + "\tbackground-image: url('" + winpic + "')!important;\n"
                     + "\tbackground-size: cover!important;\n"
                     + "}\n";

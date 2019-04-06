@@ -5,9 +5,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 to-do list:
-- [x] add light theme
 - [ ] function 'generate from current theme'
-- [x] add editor background
 
 ## [0.0.1] - 2019-01-08
 ### Added
@@ -21,3 +19,7 @@ to-do list:
 - 3 settings about editor background
 ### Changed
 - renamed the settings in v0.0.1
+
+## [0.0.3] - 2019-4-6
+### Changed
+- changed the css style accroading to the new vsc edition
