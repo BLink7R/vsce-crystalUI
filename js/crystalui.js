@@ -40,7 +40,7 @@ function addCSS(picpath) {
             vscode.window.showErrorMessage('Can\'t find the css file');
         } else {
             // if the backpic is put as a foreground,we can just change the css of 'body'
-            // else we shoule change the css of '#workbench.main.container'
+            // else we shoule change the css of '.monaco-workbench'
             let cssaim = date.toString('utf8');
             let pos2 = cssaim.lastIndexOf('$');
             if (pos2 != -1) {
@@ -74,7 +74,7 @@ function addCSS(picpath) {
                     picarry.bkgrdOpacity[i] = 0;
                 if (isNone(picarry.bkgrdPosition[i]) || picarry.bkgrdPosition[i] == '')
                     picarry.bkgrdPosition[i] = "right bottom";
-                cssaim += "[id=\"workbench.parts.editor\"] .split-view-view:nth-child(1) .editor-container .overflow-guard>.monaco-scrollable-element::before {\n"
+                cssaim += "[id=\"workbench.parts.editor\"] .split-view-view:nth-child(" + i + 1 + ") .editor-container .overflow-guard>.monaco-scrollable-element::before {\n"
                     + "\tbackground-image: url('" + picarry.backpic[i] + "');\n"
                     + "\tcontent:'';\n"
                     + "\tposition:absolute;\n"

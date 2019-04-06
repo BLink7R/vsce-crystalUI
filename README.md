@@ -55,5 +55,9 @@ This extension contributes the following settings:
 ## [0.0.3] - 2019-4-6
 ### Changed
 - changed the css style accroading to the new vsc edition
+
+## [0.0.4] - 2019-4-6
+### Changed
+- fixed some bugs
 -----------------------------------------------------------------------------------------------------------
 $>\omega<$ enjoy it!
