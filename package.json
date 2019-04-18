@@ -28,20 +28,20 @@
 		],
 		"themes": [
 			{
-				"label": "crystal ui",
+				"label": "crystal ui dark",
 				"uiTheme": "vs-dark",
-				"path": "./json/crystal-out.json"
+				"path": "./json/dark.json"
+			},
+			{
+				"label": "crystal ui light",
+				"uiTheme": "vs",
+				"path": "./json/light.json"
 			}
 		],
 		"configuration": {
 			"title": "Plugin crystalUI configuration",
 			"type": "object",
 			"properties": {
-				"crystalUI.useDarkTheme": {
-					"type": "boolean",
-					"default": true,
-					"description": "True - using a dark theme;False - using a light theme"
-				},
 				"crystalUI.window.foreground": {
 					"type": "boolean",
 					"default": false,
@@ -54,25 +54,24 @@
 				},
 				"crystalUI.window.opacity": {
 					"type": "number",
-					"default": 0.7,
-					"description": "The opacity of vscode's window in crystal mode.Need a value between 0 and 1."
-				},
-				"crystalUI.window.listsOpacity": {
-					"type": "number",
-					"default": 0.3,
-					"description": "The opacity of lists' background when mouseon or mousefocus.Need a value between 0 and 1."
+					"default": 0.8,
+					"description": "The opacity of foreground.Need a value between 0 and 1."
 				},
 				"crystalUI.editor.backpic": {
 					"type": "array",
-					"default": [],
-					"description": "Absolute path of the editor's background,default if set to '',no back pic if set to null.(Max length is 3)"
+					"default": [
+						"",
+						"",
+						""
+					],
+					"description": "Absolute path of the editor's background,default if set to \"\",no back pic if set to null.(Max length is 3)"
 				},
 				"crystalUI.editor.bkgrdOpacity": {
 					"type": "array",
 					"default": [
-						0.5,
-						0.5,
-						0.5
+						0.6,
+						0.6,
+						0.6
 					],
 					"description": "The opacity of editor's background.Need values between 0 and 1.(Max length is 3)"
 				},

@@ -27,3 +27,9 @@ to-do list:
 ## [0.0.4] - 2019-4-6
 ### Changed
 - fixed some bugs
+  
+## [0.0.5] - 2019-4-18
+### Changed
+- rewrote readme
+### Removed
+- some unnecessary functions
