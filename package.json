@@ -2,7 +2,7 @@
 	"name": "crystalui",
 	"displayName": "crystal UI",
 	"description": "To make your vscode more attractive",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "halflife1600yrs",
 	"engines": {
 		"vscode": "^1.30.0"
